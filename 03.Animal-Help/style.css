@@ -1,0 +1,285 @@
+:root{
+    --main-color-theme:#85DCFF;
+}
+
+body {
+    font-family: 'Ariel', sans-serif;
+}
+
+/* NAVIGATION STYLING */
+.header-container{
+    box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.1);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+.header-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 48px 0 96px;
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    gap:12px;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero-container{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--main-color-theme);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 78px 0 156px
+}
+
+.hero-container .hero-img{
+    max-width: 600px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.hero-container .hero-text-contianer{
+    max-width: 900px;
+    height: 100%;
+    padding: 0 64px;
+    display: grid;
+    place-content: center;
+}
+.hero-container .hero-text-contianer .hero-title{
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+}
+
+.hero-container .hero-text-contianer .hero-subtitle{
+    margin-bottom: 32px;
+    font-size: 1.2rem;
+
+}
+.hero-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px
+}
+.hero-container .hero-text-contianer .hero-buttons button{
+  box-sizing: content-box;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.hero-container .hero-text-contianer .hero-buttons .hero-donate-btn{
+    background-color: white;
+    border: 1px solid black;
+    padding: 16px 96px;
+}
+.hero-container .hero-text-contianer .hero-buttons .hero-join-btn{
+    background-color: black;
+    color:white;
+    border:none;
+    padding: 16px 138px;
+}
+
+/* INFO SECTION */
+
+.info-section{
+    width: 100%;
+    height: 70vh;
+    padding: 32px 0;
+}
+.info-section .info-title, .info-section .info-subtitle{
+    text-align: center;
+}
+.info-section .info-title{
+    margin-bottom: 32px;
+}
+
+.info-section .info-subtitle{
+    letter-spacing: 2px;
+}
+
+.info-features{
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+    text-align: center;
+}
+.info-card{
+    width: 400px;
+}
+.info-card i{
+    color:var(--main-color-theme);
+    font-size: 7rem;
+    margin-bottom: 32px;
+}
+.info-card-title {
+    margin-bottom: 32px;
+    font-size: 1.2rem;
+}
+
+
+
+/* Mission seciton */
+.mission-container{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--main-color-theme);
+    padding: 78px 0;
+    text-align: center;
+}
+
+.mission-container .mission-title{
+    font-size: 2rem;
+    margin-bottom: 64px;
+}
+
+.mission-container .mission-objectives-list{
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.2rem;
+    gap: 12px 64px;
+    margin-bottom: 64px;
+}
+.mission-objective-container{
+    display: flex;
+    gap:12px;
+}
+
+.mission-btn{
+    box-sizing: content-box;
+    border-radius: 8px;
+    background-color: black;
+    color:white;
+    border:none;
+    padding: 16px 96px;
+}
+
+/* ANIMALS SECTION */
+
+.animals{
+    text-align: center;
+}
+.animals .animals-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 32px 0;
+}
+
+.animals .animals-subtitle{
+    margin-bottom: 32px;
+}
+
+.animals .animals-img-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 64px;
+    margin-bottom: 64px;
+}
+.animals .animals-img-container img{
+    width: 380px;
+    object-fit: contain;
+}
+
+/* FAQ SECTION */
+
+.faq-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+.faq-info-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.faq-info{
+    margin-bottom: 18px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+.faq-info header{
+    padding: 24px 32px;
+    width: 100%;
+    background-color: var(--main-color-theme);
+
+}
+
+.faq-info main{
+    font-size: 1.2rem;
+    padding: 24px 32px;
+}
+
+/* CONTACT SECTION */
+
+.contact-container{
+    margin-top: 72px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+}
+.contact-container img{
+    width: 45%;
+    object-fit: cover;
+}
+
+.contact-container .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+.contact-container .contact-form-title{
+    font-size: 2rem;
+}
+.contact-container .contact-form-subtitle{
+    width: 600px;
+}
+.contact-container .contact-form-email{
+    padding: 12px;
+    width: 300px;
+    border:1px solid lightgrey;
+    border-radius: 8px;
+}
+.contact-container .contact-form-email:placeholder-shown{
+    font-weight: bold;
+}
+.contact-container .contact-form-btn{
+    width: 200px;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+/* FOOTER STYLE */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px;
+}
+footer i{
+    font-size: 1.5rem;
+    margin-right: 6px;
+}
+footer p {
+    font-weight: 500;
+}

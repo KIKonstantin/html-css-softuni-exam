@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    object-fit: cover;
+}
+
+.plans-container{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   gap:48px;
+}
+
+.plan-card{
+    position: relative;
+    width:500px;
+    height: 700px;
+    background-color: #fff;
+    padding:32px;
+}
+
+.plan-card:nth-child(2){
+    transform: scale(1.05);
+}
+
+/* Plan HEADER */
+
+.plan-card header .plan-title{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.plan-card header .plan-price{
+    margin:24px 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.plan-card header .plan-payment-info{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.plan-card header .plan-price b{
+    font-size: 5rem;
+}
+
+
+/* PLAN FEATURES */
+
+.plan-card .plan-features{
+    list-style: none;
+    padding:0;
+}
+
+.plan-card .plan-features .plan-feature i{
+  margin-right: 5px;
+}
+
+.plan-card .plan-features .plan-feature{
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+/* PLAN subscribe */
+
+.plan-card .plan-subscribe{
+    position: absolute;
+    bottom:36px;
+}
+
+.plan-card .plan-subscribe button{
+    box-sizing: content-box;
+   padding: 16px 36px;
+   background-color: black;
+   border-radius: 8px;
+   color:#fff;
+   font-size: 1.3rem;
+   cursor: pointer;
+}
